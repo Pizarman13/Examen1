@@ -17,6 +17,14 @@ void cambio(int *a, int *b) {
     *b = temp;
 }
 
+// Excepciones
+void dividir(int a, int b) {
+    if (b == 0) {
+        throw "No se puede dividir entre 0";
+    }
+    std::cout << "El resultado de la division es: " << a / b << std::endl;
+}
+
 int main() {
     int a = 5, b = 6;
 
@@ -44,6 +52,13 @@ int main() {
 
     // Imprimir los valores de x y y despues del cambio
     std::cout << "Despues del cambio" << "x = " << x << ", y = " << y << std::endl;
+
+    // Excepciones
+    try {
+        dividir(9, 0);
+        } catch (const char* e) {
+        std::cout << "Se produjo un error: " << e << std::endl;
+    }
 
     return 0;
 }
