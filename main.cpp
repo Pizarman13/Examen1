@@ -10,6 +10,13 @@ int sumar(int a, int b) {
     return a + b;
 }
 
+// Funcion punteros
+void cambio(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int main() {
     int a = 5, b = 6;
 
@@ -26,6 +33,17 @@ int main() {
 
     // Mostrar los detalles del estudiante
     est1.mostrar_info();
+
+    int x = 0, y = 1;
+
+    // Imprimir los valores de x y y antes del cambio
+    std::cout << "Antes del cambio" << "x = " << x << ", y = " << y << std::endl;
+
+    // Cambiar los valores de x y y
+    cambio(&x, &y);
+
+    // Imprimir los valores de x y y despues del cambio
+    std::cout << "Despues del cambio" << "x = " << x << ", y = " << y << std::endl;
 
     return 0;
 }
