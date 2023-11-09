@@ -60,5 +60,17 @@ int main() {
         std::cout << "Se produjo un error: " << e << std::endl;
     }
 
+    // Registrar materias
+    est1.registrar_materia("Programacion");
+
+    // Mostrar materias
+    est1.mostrar_materias();
+
+    // Registrar más materias
+    est1.registrar_materia("Matematicas");
+    est1.registrar_materia("Fisica");
+
+    est1.mostrar_materias();
+
     return 0;
 }
