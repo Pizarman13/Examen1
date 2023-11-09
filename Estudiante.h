@@ -10,13 +10,15 @@
 #include <vector>
 
 class Estudiante {
+
+public:
+
     std::string nombre;
     int edad;
     std::string grado;
     // Añadir un vector de materias
     std::vector<std::string> materias;
 
-public:
     void setNombre(const std::string &nombre);
     std::string getNombre();
     void setEdad(int edad);

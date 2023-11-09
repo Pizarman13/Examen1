@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Estudiante.h"
 
+
 // Funcion sumar
 int sumar(int a, int b) {
     return a + b;
@@ -23,6 +24,17 @@ void dividir(int a, int b) {
         throw "No se puede dividir entre 0";
     }
     std::cout << "El resultado de la division es: " << a / b << std::endl;
+}
+
+// vector Estudiantes
+std::vector<Estudiante> estudiantes_por_grado(std::vector<Estudiante> estudiantes, std::string grado) {
+    std::vector<Estudiante> estudiantes_filtrados;
+    for (Estudiante estudiante : estudiantes) {
+        if (estudiante.grado == grado) {
+            estudiantes_filtrados.push_back(estudiante);
+        }
+    }
+    return estudiantes_filtrados;
 }
 
 int main() {
@@ -78,4 +90,6 @@ int main() {
     // Recibir calificaciones
     est1.recibir_calificaciones(calificaciones);
     return 0;
+
+
 }
