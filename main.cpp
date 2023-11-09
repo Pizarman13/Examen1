@@ -72,5 +72,10 @@ int main() {
 
     est1.mostrar_materias();
 
+    //vector de calificaciones
+    std::vector<int> calificaciones = {9, 8, 5, 6, 8};
+
+    // Recibir calificaciones
+    est1.recibir_calificaciones(calificaciones);
     return 0;
 }

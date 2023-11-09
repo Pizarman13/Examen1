@@ -35,4 +35,3 @@ void Estudiante::mostrar_info() {
     std::cout << "Grado: " << grado << std::endl;
 }
 
-

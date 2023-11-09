@@ -36,6 +36,16 @@ public:
         }
         std::cout << std::endl;
     }
+    // Añadir un metodo para recibir calificaciones y  calcular el promedio
+    void recibir_calificaciones(std::vector<int> calificaciones) {
+        int suma = 0;
+        for (int calificacion : calificaciones) {
+            suma += calificacion;
+            std::cout << calificacion << " ";
+        }
+        float promedio = suma / calificaciones.size();
+        std::cout << "\nEl promedio de calificaciones es: " << promedio << std::endl;
+    }
 };
 
 
