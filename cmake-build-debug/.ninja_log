@@ -1,3 +1,6 @@
 # ninja log v5
 1	772	7212299766210476	CMakeFiles/Examen1.dir/main.cpp.obj	2718bbd8a805f50
 776	1004	7212299768468407	Examen1.exe	4c78c6c040d64a16
+11	699	7212308687403328	CMakeFiles/Examen1.dir/Estudiante.cpp.obj	798bc4854602853b
+4	700	7212308687473136	CMakeFiles/Examen1.dir/main.cpp.obj	2718bbd8a805f50
+701	890	7212308689395024	Examen1.exe	cb65f020a268897c
