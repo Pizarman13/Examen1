@@ -1,6 +1,6 @@
 # Examen1
 Examen 1
-
+https://github.com/Pizarman13/Examen1.git
 Parte 1 Preguntas de opción multiple:
   1. d) Todas son correctas.
   2. b) Un archivo que ayuda a gestionar y automatizar la compilación de proyectos de programación.
